@@ -1,0 +1,74 @@
+# curl command for registering User
+POST http://localhost:8000/api/user/register/
+Content-Type: application/json
+
+{
+    "email": "sanat123@example.com",
+    "name": "SKM",
+    "password": "12345678",
+    "password2": "12345678"
+}
+
+###
+
+# curl command for user login
+POST http://localhost:8000/api/user/login/
+Content-Type: application/json
+
+{
+    "email": "sanat123@example.com",
+    "password": "12345678"
+}
+
+> {%
+    client.global.set("auth_token", response.body.responseData.token.access);
+%}
+
+###
+
+# curl addTask
+POST http://localhost:8000/api/todo/addTask/
+Authorization: Bearer {{auth_token}}
+Content-Type: application/json
+
+{
+    "title": "TODO",
+    "description": "Testing for todo",
+    "due_date": "2024-02-01"
+}
+
+###
+
+# curl /getAllTasks/'
+GET http://localhost:8000/api/todo/getAllTasks/
+
+###
+
+# curl /getAllTasks/'
+GET http://localhost:8000/api/todo/getTask/?task_id=Task_773e6a396140ef2cb983d88b1ee8d9df
+
+###
+
+# curl for deleting task
+DELETE http://localhost:8000/api/todo/deleteTask/?task_id=Task_d0cccbd037e84a94c6db894eb215099e
+Authorization: Bearer {{auth_token}}
+
+###
+
+# curl for updating task
+PATCH http://localhost:8000/api/todo/updateTask/
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
+{
+    "TaskId": "Task_39d6b1681cae2e78bf8d6f5c7fb0730f",
+    "status": 1
+}
+
+###
+
+
+
+
+
+
