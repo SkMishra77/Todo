@@ -1,0 +1,41 @@
+[
+    {
+        "model": "accounts.user",
+        "pk": "sanat123@example.com",
+        "fields": {
+            "password": "pbkdf2_sha256$720000$cjwxlJboAqxhPqIvISxaP6$eOALLZt2aJukvfxmxhXN8jZ86hH72e+qEW1L5GD99Js=",
+            "last_login": "2024-01-26T01:45:14.410",
+            "name": "SKM",
+            "is_active": true,
+            "is_admin": false,
+            "created_at": "2024-01-26T00:52:21.748",
+            "updated_at": "2024-01-26T00:52:21.748"
+        }
+    },
+    {
+        "model": "accounts.user",
+        "pk": "sanat12@example.com",
+        "fields": {
+            "password": "pbkdf2_sha256$720000$42L96836U8V5Rh7h8zf6HV$La0VwpHMFzk/o/7lpA1TZjmH1XOEtlGAKPso02699XA=",
+            "last_login": null,
+            "name": "SKM",
+            "is_active": true,
+            "is_admin": false,
+            "created_at": "2024-01-26T01:43:58.334",
+            "updated_at": "2024-01-26T01:43:58.334"
+        }
+    },
+    {
+        "model": "accounts.user",
+        "pk": "sanat@example.com",
+        "fields": {
+            "password": "pbkdf2_sha256$720000$7jTll5NwvplMsPxybAQGSq$cQG6gash10OdbUU6hAY78+WBuFj5vDhyglj/d2Y2VB4=",
+            "last_login": "2024-01-26T01:02:08.426",
+            "name": "SKM",
+            "is_active": true,
+            "is_admin": false,
+            "created_at": "2024-01-26T00:48:35.995",
+            "updated_at": "2024-01-26T00:48:35.995"
+        }
+    }
+]

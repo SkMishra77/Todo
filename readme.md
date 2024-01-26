@@ -98,7 +98,9 @@ Content-Type: application/json
 OUTPUT
 {
     "error": false,
-    "responseData": "Task added",
+    "responseData": {
+        "TaskId": "Task_32ebc1a29216cc711cf52c1bf8b5aec3"
+    },
     "status_code": 200
 }
 ```

@@ -44,7 +44,7 @@ GET http://localhost:8000/api/todo/getAllTasks/
 
 ###
 
-# curl /getAllTasks/'
+# curl /getTasks/'
 GET http://localhost:8000/api/todo/getTask/?task_id=Task_773e6a396140ef2cb983d88b1ee8d9df
 
 ###

@@ -35,8 +35,8 @@ class TodoViewSet(viewsets.ViewSet):
         }
         serializer = TaskCreationSerializer(data=data)
         if serializer.is_valid():
-            serializer.save()
-            return response_fun(1, 'Task added')
+            instance = serializer.save()
+            return response_fun(1, {"TaskId": instance.TaskId})
         else:
             return response_fun(0, str(serializer.errors))
 
